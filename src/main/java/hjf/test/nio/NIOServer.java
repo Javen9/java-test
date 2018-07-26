@@ -12,9 +12,10 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
+ * NIO服务端
  * Created by javen on 2018/7/25.
  */
-public class Server {
+public class NIOServer {
     private int flag = 0;
     private int BLOCK = 40960;
     private ByteBuffer sendBuffer = ByteBuffer.allocate(BLOCK);
@@ -23,9 +24,9 @@ public class Server {
 
     public static void main(String[] args) {
         try {
-            Server server = new Server();
-            server.open(8888);
-            server.listen();
+            NIOServer NIOServer = new NIOServer();
+            NIOServer.open(8888);
+            NIOServer.listen();
         } catch (IOException e) {
             e.printStackTrace();
         }

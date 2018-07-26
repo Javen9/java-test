@@ -10,6 +10,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
+ * 使用NIOSocket模拟Http请求
  * Created by javen on 2018/7/25.
  */
 public class HttpClient {

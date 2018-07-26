@@ -10,9 +10,10 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
+ * NIO客户端
  * Created by javen on 2018/7/25.
  */
-public class Client {
+public class NIOClient {
 
     private int BLOCK = 40960;
 
@@ -24,9 +25,9 @@ public class Client {
 
     public static void main(String[] args) {
         try {
-            Client client = new Client();
-            client.open("127.0.0.1", 8888);
-            client.listen();
+            NIOClient NIOClient = new NIOClient();
+            NIOClient.open("127.0.0.1", 8888);
+            NIOClient.listen();
         } catch (IOException e) {
             e.printStackTrace();
         }
